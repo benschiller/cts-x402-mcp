@@ -1,0 +1,21 @@
+{
+    "mcpServers": {
+      "cts-reports-x402": {
+      "autoApprove": [
+        "search-reports",
+        "browse-reports",
+        "get-report-resource",
+        "get-payment-info"
+      ],
+      "timeout": 60,
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "path/to/build/x402McpServer.js"
+      ],
+      "env": {
+        "PRIVATE_KEY": "insert your private key"
+      }
+    }
+    }
+  }

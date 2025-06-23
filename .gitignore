@@ -1,0 +1,12 @@
+.env
+build/
+node_modules/
+*.log
+.DS_Store
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+*.js
+*.js.map
+package-lock.json
