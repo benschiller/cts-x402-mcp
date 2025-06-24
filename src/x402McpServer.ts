@@ -30,7 +30,7 @@ const account = privateKeyToAccount(formattedPrivateKey);
 
 // Create axios instances
 const X402_SERVER_BASE = "http://localhost:4021"; // Your x402 Express server
-const REPORTS_API_BASE = "https://cryptotwitter.space"; // Direct API for free operations
+const REPORTS_API_BASE = "https://cryptotwitter.space"; // Live API
 
 // Payment-enabled axios for paid operations
 const paymentAxios = withPaymentInterceptor(

@@ -2,7 +2,7 @@
 
 ## 🚀 Agents in Action Hackathon Entry
 
-**CryptoTwitter.Space x402 MCP Server** is an entry for the "Agents in Action" hackathon, showcasing the power of autonomous, on-chain commerce using **x402pay and CDP Wallet** with integrated **Model Context Protocol (MCP)**.
+**CryptoTwitter.Space x402 MCP Server** is an entry for the "Agents in Action" hackathon, showcasing the power of autonomous, on-chain commerce using **x402pay and CDP Wallet** with integrated **MCP Server with x402 Payments**.
 
 ## ✨ Project Overview
 
@@ -10,7 +10,7 @@ This application acts as a micro-SaaS service, providing **gated, pay-per-use ac
 
 The innovation lies in its ability to empower **agentic commerce with automated payouts**, demonstrating a complete revenue-generating loop for a proprietary data stream. Furthermore, it integrates with **MCP** to enable structured interaction, allowing users to query and purchase reports programmatically.
 
-Currently **human-in-the-loop**, this system is designed to evolve toward full autonomy in future iterations.
+Currently **human-in-the-loop**, this system is designed to evolve toward full autonomy in future iterations driven by an AI character with a unique personality, rich narrative, and compelling backstory on platforms such as Virtuals or Eliza.
 
 ## 💡 Problem Solved
 
@@ -30,7 +30,7 @@ Instead of scrolling endlessly through X or listening to replays of Twitter Spac
 
 > **Search:** “What's going on with bitcoin?”
 
-The **x402 MCP Server** instantly returns a list of timestamped, curated reports generated from live Twitter Spaces where Bitcoin was discussed.
+The **MCP Server with x402 Payments** instantly returns a list of timestamped, curated reports generated from live Twitter Spaces where Bitcoin was discussed.
 
 Each report includes:
 - Key quotes and topic summaries  
@@ -53,13 +53,14 @@ By the end of the session, the trader has context others missed—and the ecosys
     *   **Curator (30%)**
     *   **Platform (20%)**
 *   **Composable & Modular Logic:** Designed for reusability, demonstrating a clear separation of concerns between payment handling and distribution.
-*   **Structured Interaction (MCP):** Integrates with **Model Context Protocol (MCP)** to provide a programmatic interface for querying and accessing paid reports.
+*   **Structured Interaction (MCP):** Integrates with **MCP Server with x402 Payments** to provide a programmatic interface for querying and accessing paid reports.
 *   **Real-World Relevance:** Solves a tangible need for creators and platforms seeking to monetize digital assets and manage payouts efficiently on-chain.
 
 ## 📺 Demo
 
-A video demonstration of the project is available here:
-[Link to your Demo Video]
+[Watch the Full Demonstration](https://www.youtube.com/watch?v=-YjxSn_7M0M)
+
+[![Watch the Full Demonstration](https://i.imgur.com/FS1pTlH.png)](https://www.youtube.com/watch?v=-YjxSn_7M0M)
 
 ## 🛠️ Technologies Used
 
@@ -67,7 +68,7 @@ A video demonstration of the project is available here:
 *   **Coinbase Developer Platform (CDP) Wallet:** For secure, programmable smart accounts and automated crypto flows.
 *   **Express.js:** Backend API server (`src/x402ExpressServer.ts`).
 *   **TypeScript / Node.js**
-*   **Model Context Protocol (MCP):** For structured interaction and programmatic access to reports.
+*   **MCP Server with x402 Payments:** For structured interaction and programmatic access to reports.
 *   **viem:** For Ethereum interaction utilities.
 
 ## 🏆 How it Addresses Judging Criteria
@@ -80,7 +81,12 @@ This project directly tackles the hackathon's judging criteria:
 *   **Composability: reusable flows, templates, or modular logic:** The core payment and distribution logic is encapsulated in `src/smartDistribution.ts`, making it reusable. The Express server provides a clear API boundary.
 *   **Creativity: novel agents or new financial primitives:** By combining pay-per-use access with automated, multi-party on-chain distribution orchestrated by the **x402 Express Server**, it creates a novel financial primitive for API monetization.
 *   **Technical execution: clean, working code with a video demo:** The codebase is well-structured, functional, and demonstrated via a comprehensive video.
-*   **Effective and creative use of MCP:** The project fully integrates **Model Context Protocol (MCP)** to act as the primary interface for users, demonstrating how structured interaction can orchestrate complex on-chain financial workflows.
+*   **Effective and creative use of MCP:** The project fully integrates **MCP Server with x402 Payments** to act as the primary interface for users, demonstrating how structured interaction can orchestrate complex on-chain financial workflows.
+
+## 💰 Verifable On-chain Payments
+
+*   **Autonomous Payment:** https://sepolia.basescan.org/tx/0x8eb9edbcf419afedd02425bc362c80360fc41b2166abb990198bb6d362cf4c88#eventlog
+*   **Revenue Distribution:** https://sepolia.basescan.org/tx/0x054e06160ef82508898b3fb4521f28828c5e5125e1c4fec8e6078cad24fec0bf#eventlog
 
 ## ⚙️ Local Setup (for Judges)
 
@@ -134,7 +140,7 @@ To run the server locally:
 
 ### Setting Up MCP Client (e.g., Claude or Cursor)
 
-To connect an MCP client like Claude or Cursor to the `x402 MCP Server`, follow these steps:
+To connect an MCP client like Claude or Cursor to the `MCP Server with x402 Payments`, follow these steps:
 
 #### 1. Configure `x402McpServer.json`
 Ensure your `src/x402McpServer.json` file contains the following configuration:
